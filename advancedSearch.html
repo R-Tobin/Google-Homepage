@@ -5,37 +5,43 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <nav class="navbar">
+        <nav class="navbar adv-nav">
             <a href="./index.html">Home</a>
             <a href="./imageSearch.html">Images</a>
         </nav>
-        <div class="logo">
-            <img class ="google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
-        </div>    
-        <h3>Advanced Search</h3>
-        <h4>Find pages with...</h4>
-        <div class="form-wrapper">
-            <form action="https://google.com/search">
-                
+        <div class="adv-srh">
+            <span >Advanced Search</span>
+        </div>
+        <div class="pages">
+            <span>Find pages with...</span>
+        </div>
+        <div class="form-wrapper adv-wrapper">
+            <form class= "form-spc" action="https://google.com/search">
                     <label for="all-words">
                         All these words:
                     </label>
-                    <input id="all-words" type="text" name="q">
-                    <br>
+                    <input id="all-words" class="inp" type="text" name="as_q">
+                    <br>      
+            </form>
+            <form class= "form-spc" action="https://google.com/search">
                     <label for="exact-words">
                         This exact word or phrase:
                     </label>
-                    <input id="exact-words" type="text" name="q">
+                    <input id="exact-words" class="inp" type="text" name="as_epq">
                     <br>
+            </form>
+            <form class= "form-spc" action="https://google.com/search">
                     <label for="any-word">
                         Any of these words:
                     </label>
-                    <input id="any-word" type="text" name="q">
+                    <input id="any-word" class="inp" type="text" name="as_oq">
                     <br>
+            </form>
+            <form class= "form-spc" action="https://google.com/search">
                     <label for="none-words">
                         None of these words:
                     </label>
-                    <input id="none-words" type="text" name="q">
+                    <input id="none-words" class="inp" type="text" name="as_eq">
             </form>
         </div>    
     </body>
